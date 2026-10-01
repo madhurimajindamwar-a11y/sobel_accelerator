@@ -49,6 +49,9 @@ module sobel_core_tb;
         $display("Test 3 Edge = %d", edge_pixel);
 
         $finish;
+        $dumpfile("sobel.vcd");
+        $dumpvars(0, sobel_core_tb);
+        
 
     end
 
