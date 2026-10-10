@@ -1,0 +1,6 @@
+time rst valid_in edge_valid edge_pixel
+0 1 0 x   x
+30000 0 0 x   x
+40000 0 1 x   x
+290000 0 0 x   x
+tb/sobel_gls_diag_tb.v:42: $finish called at 340000 (1ps)

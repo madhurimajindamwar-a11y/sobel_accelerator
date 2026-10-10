@@ -1,0 +1,10 @@
+Usage: /build/bin/openroad [-help] [-version] [-no_init] [-exit] [-gui] [-log file_name] cmd_file
+  -help              show help and exit
+  -version           show version and exit
+  -no_init           do not read .openroad init file
+  -threads count|max use count threads
+  -no_splash         do not show the license splash at startup
+  -exit              exit after reading cmd_file
+  -gui               start in gui mode
+  -log <file_name>   write a log in <file_name>
+  cmd_file           source cmd_file

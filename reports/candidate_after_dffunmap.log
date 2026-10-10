@@ -1,0 +1,581 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.47+121 (git sha1 98b4affc4, g++ 13.2.0-23ubuntu4 -fPIC -O3)
+
+-- Running command `
+read_verilog rtl/sobel_window.v rtl/sobel_accelerator.v rtl/sobel_core_candidate.v
+hierarchy -check -top sobel_accelerator
+proc
+flatten
+opt
+memory
+techmap
+opt
+dffunmap
+check
+stat
+' --
+
+1. Executing Verilog-2005 frontend: rtl/sobel_window.v
+Parsing Verilog input from `rtl/sobel_window.v' to AST representation.
+Generating RTLIL representation for module `\sobel_window'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: rtl/sobel_accelerator.v
+Parsing Verilog input from `rtl/sobel_accelerator.v' to AST representation.
+Generating RTLIL representation for module `\sobel_accelerator'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: rtl/sobel_core_candidate.v
+Parsing Verilog input from `rtl/sobel_core_candidate.v' to AST representation.
+Generating RTLIL representation for module `\sobel_core'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \sobel_accelerator
+Used module:     \sobel_core
+Used module:     \sobel_window
+Parameter \IMAGE_WIDTH = 5
+
+4.2. Executing AST frontend in derive mode using pre-parsed AST for module `\sobel_window'.
+Parameter \IMAGE_WIDTH = 5
+Generating RTLIL representation for module `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101'.
+
+4.3. Analyzing design hierarchy..
+Top module:  \sobel_accelerator
+Used module:     \sobel_core
+Used module:     $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101
+
+4.4. Analyzing design hierarchy..
+Top module:  \sobel_accelerator
+Used module:     \sobel_core
+Used module:     $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101
+Removing unused module `\sobel_window'.
+Removed 1 unused modules.
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$rtl/sobel_core_candidate.v:16$10 in module sobel_core.
+Marked 2 switch rules as full_case in process $proc$rtl/sobel_window.v:88$34 in module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+Marked 1 switch rules as full_case in process $proc$rtl/sobel_window.v:44$33 in module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+Removed a total of 0 dead cases.
+
+5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 8 assignments to connections.
+
+5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~8 debug messages>
+
+5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+     1/1: $1\edge_pixel[7:0]
+Creating decoders for process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+     1/28: $0\window_valid[0:0]
+     2/28: $0\row3_d2[7:0]
+     3/28: $0\row3_d1[7:0]
+     4/28: $0\row2_d2[7:0]
+     5/28: $0\row2_d1[7:0]
+     6/28: $0\row1_d2[7:0]
+     7/28: $0\row1_d1[7:0]
+     8/28: $0\row[2:0]
+     9/28: $0\col[2:0]
+    10/28: $0\line2_4[7:0]
+    11/28: $0\line2_3[7:0]
+    12/28: $0\line2_2[7:0]
+    13/28: $0\line2_1[7:0]
+    14/28: $0\line2_0[7:0]
+    15/28: $0\line1_4[7:0]
+    16/28: $0\line1_3[7:0]
+    17/28: $0\line1_2[7:0]
+    18/28: $0\line1_1[7:0]
+    19/28: $0\line1_0[7:0]
+    20/28: $0\p9[7:0]
+    21/28: $0\p8[7:0]
+    22/28: $0\p7[7:0]
+    23/28: $0\p6[7:0]
+    24/28: $0\p5[7:0]
+    25/28: $0\p4[7:0]
+    26/28: $0\p3[7:0]
+    27/28: $0\p2[7:0]
+    28/28: $0\p1[7:0]
+Creating decoders for process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:44$33'.
+     1/2: $1\line2_current[7:0]
+     2/2: $1\line1_current[7:0]
+
+5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\sobel_core.\edge_pixel' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `\sobel_core.\gx' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `\sobel_core.\gy' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `\sobel_core.\abs_gx' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `\sobel_core.\abs_gy' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `\sobel_core.\magnitude' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_current' from process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:44$33'.
+No latch inferred for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_current' from process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:44$33'.
+
+5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$249' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$250' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p3' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$251' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p4' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$252' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p5' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$253' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p6' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$254' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p7' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$255' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p8' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$256' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p9' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$257' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\window_valid' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$258' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_0' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$259' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$260' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$261' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_3' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$262' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_4' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$263' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_0' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$264' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$265' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$266' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_3' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$267' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_4' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$268' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\col' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$269' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$270' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row1_d1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$271' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row1_d2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$272' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row2_d1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$273' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row2_d2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$274' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row3_d1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$275' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row3_d2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$276' with positive edge clock.
+
+5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+Removing empty process `sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+Found and cleaned up 6 empty switches in `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+Removing empty process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+Found and cleaned up 1 empty switch in `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:44$33'.
+Removing empty process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:44$33'.
+Cleaned up 8 empty switches.
+
+5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_core.
+<suppressed ~4 debug messages>
+Optimizing module sobel_accelerator.
+Optimizing module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+<suppressed ~4 debug messages>
+
+6. Executing FLATTEN pass (flatten design).
+Deleting now unused module sobel_core.
+Deleting now unused module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+<suppressed ~2 debug messages>
+
+7. Executing OPT pass (performing simple optimizations).
+
+7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_accelerator.
+
+7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sobel_accelerator'.
+<suppressed ~51 debug messages>
+Removed a total of 17 cells.
+
+7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sobel_accelerator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $flatten\sobel_unit.$ternary$rtl/sobel_core_candidate.v:31$28: $flatten\sobel_unit.$add$rtl/sobel_core_candidate.v:17$18_Y -> { 1'0 $flatten\sobel_unit.$add$rtl/sobel_core_candidate.v:17$18_Y [9:0] }
+      Replacing known input bits on port A of cell $flatten\sobel_unit.$ternary$rtl/sobel_core_candidate.v:32$30: $flatten\sobel_unit.$add$rtl/sobel_core_candidate.v:24$26_Y -> { 1'0 $flatten\sobel_unit.$add$rtl/sobel_core_candidate.v:24$26_Y [9:0] }
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~33 debug messages>
+
+7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sobel_accelerator.
+Performed a total of 0 changes.
+
+7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sobel_accelerator'.
+Removed a total of 0 cells.
+
+7.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $flatten\window_unit.$procdff$276 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$52_Y, Q = \window_unit.row3_d2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$279 ($sdff) from module sobel_accelerator (D = \window_unit.row3_d1, Q = \window_unit.row3_d2).
+Adding SRST signal on $flatten\window_unit.$procdff$275 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$57_Y, Q = \window_unit.row3_d1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$281 ($sdff) from module sobel_accelerator (D = \window_unit.pixel_in, Q = \window_unit.row3_d1).
+Adding SRST signal on $flatten\window_unit.$procdff$274 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$62_Y, Q = \window_unit.row2_d2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$283 ($sdff) from module sobel_accelerator (D = \window_unit.row2_d1, Q = \window_unit.row2_d2).
+Adding SRST signal on $flatten\window_unit.$procdff$273 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$67_Y, Q = \window_unit.row2_d1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$285 ($sdff) from module sobel_accelerator (D = \window_unit.line1_current, Q = \window_unit.row2_d1).
+Adding SRST signal on $flatten\window_unit.$procdff$272 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$72_Y, Q = \window_unit.row1_d2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$287 ($sdff) from module sobel_accelerator (D = \window_unit.row1_d1, Q = \window_unit.row1_d2).
+Adding SRST signal on $flatten\window_unit.$procdff$271 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$77_Y, Q = \window_unit.row1_d1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$289 ($sdff) from module sobel_accelerator (D = \window_unit.line2_current, Q = \window_unit.row1_d1).
+Adding SRST signal on $flatten\window_unit.$procdff$270 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$87_Y, Q = \window_unit.row, rval = 3'000).
+Adding EN signal on $auto$ff.cc:266:slice$291 ($sdff) from module sobel_accelerator (D = $flatten\window_unit.$add$rtl/sobel_window.v:212$37_Y, Q = \window_unit.row).
+Adding SRST signal on $flatten\window_unit.$procdff$269 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$95_Y, Q = \window_unit.col, rval = 3'000).
+Adding EN signal on $auto$ff.cc:266:slice$295 ($sdff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$93_Y, Q = \window_unit.col).
+Adding SRST signal on $flatten\window_unit.$procdff$268 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$102_Y, Q = \window_unit.line2_4, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$297 ($sdff) from module sobel_accelerator (D = \window_unit.line1_4, Q = \window_unit.line2_4).
+Adding SRST signal on $flatten\window_unit.$procdff$267 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$110_Y, Q = \window_unit.line2_3, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$301 ($sdff) from module sobel_accelerator (D = \window_unit.line1_3, Q = \window_unit.line2_3).
+Adding SRST signal on $flatten\window_unit.$procdff$266 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$119_Y, Q = \window_unit.line2_2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$305 ($sdff) from module sobel_accelerator (D = \window_unit.line1_2, Q = \window_unit.line2_2).
+Adding SRST signal on $flatten\window_unit.$procdff$265 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$129_Y, Q = \window_unit.line2_1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$309 ($sdff) from module sobel_accelerator (D = \window_unit.line1_1, Q = \window_unit.line2_1).
+Adding SRST signal on $flatten\window_unit.$procdff$264 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$140_Y, Q = \window_unit.line2_0, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$313 ($sdff) from module sobel_accelerator (D = \window_unit.line1_0, Q = \window_unit.line2_0).
+Adding SRST signal on $flatten\window_unit.$procdff$263 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$147_Y, Q = \window_unit.line1_4, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$317 ($sdff) from module sobel_accelerator (D = \window_unit.pixel_in, Q = \window_unit.line1_4).
+Adding SRST signal on $flatten\window_unit.$procdff$262 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$155_Y, Q = \window_unit.line1_3, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$321 ($sdff) from module sobel_accelerator (D = \window_unit.pixel_in, Q = \window_unit.line1_3).
+Adding SRST signal on $flatten\window_unit.$procdff$261 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$164_Y, Q = \window_unit.line1_2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$325 ($sdff) from module sobel_accelerator (D = \window_unit.pixel_in, Q = \window_unit.line1_2).
+Adding SRST signal on $flatten\window_unit.$procdff$260 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$174_Y, Q = \window_unit.line1_1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$329 ($sdff) from module sobel_accelerator (D = \window_unit.pixel_in, Q = \window_unit.line1_1).
+Adding SRST signal on $flatten\window_unit.$procdff$259 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$185_Y, Q = \window_unit.line1_0, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$333 ($sdff) from module sobel_accelerator (D = \window_unit.pixel_in, Q = \window_unit.line1_0).
+Adding SRST signal on $flatten\window_unit.$procdff$258 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$45_Y, Q = \window_unit.window_valid, rval = 1'0).
+Adding SRST signal on $flatten\window_unit.$procdff$257 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$190_Y, Q = \window_unit.p9, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$342 ($sdff) from module sobel_accelerator (D = \window_unit.pixel_in, Q = \window_unit.p9).
+Adding SRST signal on $flatten\window_unit.$procdff$256 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$195_Y, Q = \window_unit.p8, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$344 ($sdff) from module sobel_accelerator (D = \window_unit.row3_d1, Q = \window_unit.p8).
+Adding SRST signal on $flatten\window_unit.$procdff$255 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$200_Y, Q = \window_unit.p7, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$346 ($sdff) from module sobel_accelerator (D = \window_unit.row3_d2, Q = \window_unit.p7).
+Adding SRST signal on $flatten\window_unit.$procdff$254 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$205_Y, Q = \window_unit.p6, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$348 ($sdff) from module sobel_accelerator (D = \window_unit.line1_current, Q = \window_unit.p6).
+Adding SRST signal on $flatten\window_unit.$procdff$253 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$210_Y, Q = \window_unit.p5, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$350 ($sdff) from module sobel_accelerator (D = \window_unit.row2_d1, Q = \window_unit.p5).
+Adding SRST signal on $flatten\window_unit.$procdff$252 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$215_Y, Q = \window_unit.p4, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$352 ($sdff) from module sobel_accelerator (D = \window_unit.row2_d2, Q = \window_unit.p4).
+Adding SRST signal on $flatten\window_unit.$procdff$251 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$220_Y, Q = \window_unit.p3, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$354 ($sdff) from module sobel_accelerator (D = \window_unit.line2_current, Q = \window_unit.p3).
+Adding SRST signal on $flatten\window_unit.$procdff$250 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$225_Y, Q = \window_unit.p2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$356 ($sdff) from module sobel_accelerator (D = \window_unit.row1_d1, Q = \window_unit.p2).
+Adding SRST signal on $flatten\window_unit.$procdff$249 ($dff) from module sobel_accelerator (D = $flatten\window_unit.$procmux$230_Y, Q = \window_unit.p1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$358 ($sdff) from module sobel_accelerator (D = \window_unit.row1_d2, Q = \window_unit.p1).
+
+7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sobel_accelerator..
+Removed 69 unused cells and 197 unused wires.
+<suppressed ~70 debug messages>
+
+7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_accelerator.
+
+7.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sobel_accelerator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~7 debug messages>
+
+7.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sobel_accelerator.
+Performed a total of 0 changes.
+
+7.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sobel_accelerator'.
+<suppressed ~30 debug messages>
+Removed a total of 10 cells.
+
+7.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sobel_accelerator..
+Removed 0 unused cells and 8 unused wires.
+<suppressed ~4 debug messages>
+
+7.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_accelerator.
+
+7.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+7.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sobel_accelerator..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~7 debug messages>
+
+7.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sobel_accelerator.
+Performed a total of 0 changes.
+
+7.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sobel_accelerator'.
+Removed a total of 0 cells.
+
+7.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+7.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sobel_accelerator..
+
+7.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_accelerator.
+
+7.23. Finished OPT passes. (There is nothing left to do.)
+
+8. Executing MEMORY pass.
+
+8.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+8.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+8.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+8.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+8.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+8.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sobel_accelerator..
+
+8.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+8.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+8.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sobel_accelerator..
+
+8.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+8.11. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+9. Executing TECHMAP pass (map to technology primitives).
+
+9.1. Executing Verilog-2005 frontend: /usr/local/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/usr/local/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+9.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $reduce_and.
+Using template $paramod$f42569e367821ad1b7d52f2d157a44ce80c766dc\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $logic_and.
+Running "alumacc" on wrapper $extern:wrap:$ge:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$ge:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$ge:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=3:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=3:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=3:B_SIGNED=0:B_WIDTH=3:Y_WIDTH=3:394426c56d1a028ba8fdd5469b163e04011def47.
+Using extmapper simplemap for cells of type $ne.
+Using extmapper simplemap for cells of type $sdff.
+Running "alumacc" on wrapper $extern:wrap:$neg:A_SIGNED=1:A_WIDTH=11:Y_WIDTH=11:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$neg:A_SIGNED=1:A_WIDTH=11:Y_WIDTH=11:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$neg:A_SIGNED=1:A_WIDTH=11:Y_WIDTH=11:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=1:A_WIDTH=11:B_SIGNED=1:B_WIDTH=11:Y_WIDTH=11:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=1:A_WIDTH=11:B_SIGNED=1:B_WIDTH=11:Y_WIDTH=11:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=1:A_WIDTH=11:B_SIGNED=1:B_WIDTH=11:Y_WIDTH=11:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$sub:A_SIGNED=1:A_WIDTH=11:B_SIGNED=1:B_WIDTH=11:Y_WIDTH=11:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$sub:A_SIGNED=1:A_WIDTH=11:B_SIGNED=1:B_WIDTH=11:Y_WIDTH=11:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$sub:A_SIGNED=1:A_WIDTH=11:B_SIGNED=1:B_WIDTH=11:Y_WIDTH=11:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$add:A_SIGNED=0:A_WIDTH=11:B_SIGNED=0:B_WIDTH=11:Y_WIDTH=12:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:A_SIGNED=0:A_WIDTH=11:B_SIGNED=0:B_WIDTH=11:Y_WIDTH=12:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:A_SIGNED=0:A_WIDTH=11:B_SIGNED=0:B_WIDTH=11:Y_WIDTH=12:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=12:B_SIGNED=0:B_WIDTH=12:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=12:B_SIGNED=0:B_WIDTH=12:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$gt:A_SIGNED=0:A_WIDTH=12:B_SIGNED=0:B_WIDTH=12:Y_WIDTH=1:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $paramod$b88c814db3182f0c444e9827cc183ec51bbd865d\_90_alu for cells of type $alu.
+Using template $paramod$c6cac7b66cb5130862ba6df599147e943f2b57cd\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $and.
+Using template $paramod$546f3f62de618651dd3a8b3f9e661fb34b30a603\_90_alu for cells of type $alu.
+Using template $paramod$78e969f2586efcf3a5b0b0440bcca0db83d5cca2\_90_alu for cells of type $alu.
+Using template $paramod$ee3d784672cdb1cb32d9a801a3af776716f16b74\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001011 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000001100 for cells of type $lcu.
+Using template $paramod\_90_lcu_brent_kung\WIDTH=32'00000000000000000000000000000011 for cells of type $lcu.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~1493 debug messages>
+
+10. Executing OPT pass (performing simple optimizations).
+
+10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_accelerator.
+<suppressed ~633 debug messages>
+
+10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sobel_accelerator'.
+<suppressed ~102 debug messages>
+Removed a total of 34 cells.
+
+10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sobel_accelerator..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sobel_accelerator.
+Performed a total of 0 changes.
+
+10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sobel_accelerator'.
+Removed a total of 0 cells.
+
+10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sobel_accelerator..
+Removed 110 unused cells and 814 unused wires.
+<suppressed ~111 debug messages>
+
+10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_accelerator.
+<suppressed ~1 debug messages>
+
+10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sobel_accelerator..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sobel_accelerator.
+Performed a total of 0 changes.
+
+10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sobel_accelerator'.
+<suppressed ~9 debug messages>
+Removed a total of 3 cells.
+
+10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sobel_accelerator..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_accelerator.
+
+10.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+10.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sobel_accelerator..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+10.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sobel_accelerator.
+Performed a total of 0 changes.
+
+10.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sobel_accelerator'.
+Removed a total of 0 cells.
+
+10.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+10.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sobel_accelerator..
+
+10.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_accelerator.
+
+10.23. Finished OPT passes. (There is nothing left to do.)
+
+11. Executing DFFUNMAP pass (unmap clock enable and synchronous reset from FFs).
+
+12. Executing CHECK pass (checking for obvious problems).
+Checking module sobel_accelerator...
+Found and reported 0 problems.
+
+13. Printing statistics.
+
+=== sobel_accelerator ===
+
+   Number of wires:                787
+   Number of wire bits:           1864
+   Number of public wires:          62
+   Number of public wire bits:     439
+   Number of ports:                  6
+   Number of port bits:             20
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1520
+     $_AND_                        439
+     $_DFF_P_                      159
+     $_MUX_                        364
+     $_NOT_                         98
+     $_OR_                         231
+     $_XOR_                        227
+     $scopeinfo                      2
+
+End of script. Logfile hash: 7e2a0bba2e, CPU: user 0.13s system 0.02s, MEM: 26.72 MB peak
+Yosys 0.47+121 (git sha1 98b4affc4, g++ 13.2.0-23ubuntu4 -fPIC -O3)
+Time spent: 24% 15x opt_expr (0 sec), 20% 1x techmap (0 sec), ...

@@ -1,0 +1,11 @@
+VCD info: dumpfile mapped_sobel.vcd opened for output.
+GATE EDGE OUTPUT =  48
+GATE EDGE OUTPUT =  48
+GATE EDGE OUTPUT =  48
+GATE EDGE OUTPUT =  48
+GATE EDGE OUTPUT =  48
+GATE EDGE OUTPUT =  48
+GATE EDGE OUTPUT =  48
+GATE EDGE OUTPUT =  48
+GATE EDGE OUTPUT =  48
+tb/sobel_gate_tb.v:86: $finish called at 610000 (1ps)

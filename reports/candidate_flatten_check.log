@@ -1,0 +1,446 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.47+121 (git sha1 98b4affc4, g++ 13.2.0-23ubuntu4 -fPIC -O3)
+
+-- Running command `
+read_verilog rtl/sobel_window.v rtl/sobel_accelerator.v rtl/sobel_core_candidate.v
+hierarchy -check -top sobel_accelerator
+proc
+opt
+flatten
+check
+stat
+' --
+
+1. Executing Verilog-2005 frontend: rtl/sobel_window.v
+Parsing Verilog input from `rtl/sobel_window.v' to AST representation.
+Generating RTLIL representation for module `\sobel_window'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: rtl/sobel_accelerator.v
+Parsing Verilog input from `rtl/sobel_accelerator.v' to AST representation.
+Generating RTLIL representation for module `\sobel_accelerator'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: rtl/sobel_core_candidate.v
+Parsing Verilog input from `rtl/sobel_core_candidate.v' to AST representation.
+Generating RTLIL representation for module `\sobel_core'.
+Successfully finished Verilog frontend.
+
+4. Executing HIERARCHY pass (managing design hierarchy).
+
+4.1. Analyzing design hierarchy..
+Top module:  \sobel_accelerator
+Used module:     \sobel_core
+Used module:     \sobel_window
+Parameter \IMAGE_WIDTH = 5
+
+4.2. Executing AST frontend in derive mode using pre-parsed AST for module `\sobel_window'.
+Parameter \IMAGE_WIDTH = 5
+Generating RTLIL representation for module `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101'.
+
+4.3. Analyzing design hierarchy..
+Top module:  \sobel_accelerator
+Used module:     \sobel_core
+Used module:     $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101
+
+4.4. Analyzing design hierarchy..
+Top module:  \sobel_accelerator
+Used module:     \sobel_core
+Used module:     $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101
+Removing unused module `\sobel_window'.
+Removed 1 unused modules.
+
+5. Executing PROC pass (convert processes to netlists).
+
+5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$rtl/sobel_core_candidate.v:16$10 in module sobel_core.
+Marked 2 switch rules as full_case in process $proc$rtl/sobel_window.v:88$34 in module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+Marked 1 switch rules as full_case in process $proc$rtl/sobel_window.v:44$33 in module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+Removed a total of 0 dead cases.
+
+5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 1 redundant assignment.
+Promoted 8 assignments to connections.
+
+5.4. Executing PROC_INIT pass (extract init attributes).
+
+5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~8 debug messages>
+
+5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+     1/1: $1\edge_pixel[7:0]
+Creating decoders for process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+     1/28: $0\window_valid[0:0]
+     2/28: $0\row3_d2[7:0]
+     3/28: $0\row3_d1[7:0]
+     4/28: $0\row2_d2[7:0]
+     5/28: $0\row2_d1[7:0]
+     6/28: $0\row1_d2[7:0]
+     7/28: $0\row1_d1[7:0]
+     8/28: $0\row[2:0]
+     9/28: $0\col[2:0]
+    10/28: $0\line2_4[7:0]
+    11/28: $0\line2_3[7:0]
+    12/28: $0\line2_2[7:0]
+    13/28: $0\line2_1[7:0]
+    14/28: $0\line2_0[7:0]
+    15/28: $0\line1_4[7:0]
+    16/28: $0\line1_3[7:0]
+    17/28: $0\line1_2[7:0]
+    18/28: $0\line1_1[7:0]
+    19/28: $0\line1_0[7:0]
+    20/28: $0\p9[7:0]
+    21/28: $0\p8[7:0]
+    22/28: $0\p7[7:0]
+    23/28: $0\p6[7:0]
+    24/28: $0\p5[7:0]
+    25/28: $0\p4[7:0]
+    26/28: $0\p3[7:0]
+    27/28: $0\p2[7:0]
+    28/28: $0\p1[7:0]
+Creating decoders for process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:44$33'.
+     1/2: $1\line2_current[7:0]
+     2/2: $1\line1_current[7:0]
+
+5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\sobel_core.\edge_pixel' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `\sobel_core.\gx' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `\sobel_core.\gy' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `\sobel_core.\abs_gx' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `\sobel_core.\abs_gy' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `\sobel_core.\magnitude' from process `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+No latch inferred for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_current' from process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:44$33'.
+No latch inferred for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_current' from process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:44$33'.
+
+5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$249' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$250' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p3' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$251' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p4' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$252' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p5' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$253' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p6' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$254' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p7' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$255' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p8' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$256' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\p9' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$257' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\window_valid' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$258' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_0' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$259' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$260' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$261' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_3' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$262' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line1_4' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$263' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_0' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$264' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$265' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$266' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_3' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$267' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\line2_4' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$268' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\col' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$269' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$270' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row1_d1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$271' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row1_d2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$272' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row2_d1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$273' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row2_d2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$274' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row3_d1' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$275' with positive edge clock.
+Creating register for signal `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.\row3_d2' using process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+  created $dff cell `$procdff$276' with positive edge clock.
+
+5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Found and cleaned up 1 empty switch in `\sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+Removing empty process `sobel_core.$proc$rtl/sobel_core_candidate.v:16$10'.
+Found and cleaned up 6 empty switches in `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+Removing empty process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:88$34'.
+Found and cleaned up 1 empty switch in `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:44$33'.
+Removing empty process `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.$proc$rtl/sobel_window.v:44$33'.
+Cleaned up 8 empty switches.
+
+5.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_core.
+<suppressed ~4 debug messages>
+Optimizing module sobel_accelerator.
+Optimizing module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+<suppressed ~4 debug messages>
+
+6. Executing OPT pass (performing simple optimizations).
+
+6.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module sobel_core.
+Optimizing module sobel_accelerator.
+Optimizing module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+
+6.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sobel_core'.
+<suppressed ~3 debug messages>
+Finding identical cells in module `\sobel_accelerator'.
+Finding identical cells in module `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101'.
+<suppressed ~48 debug messages>
+Removed a total of 17 cells.
+
+6.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \sobel_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port A of cell $ternary$rtl/sobel_core_candidate.v:31$28: $add$rtl/sobel_core_candidate.v:17$18_Y -> { 1'0 $add$rtl/sobel_core_candidate.v:17$18_Y [9:0] }
+      Replacing known input bits on port A of cell $ternary$rtl/sobel_core_candidate.v:32$30: $add$rtl/sobel_core_candidate.v:24$26_Y -> { 1'0 $add$rtl/sobel_core_candidate.v:24$26_Y [9:0] }
+  Analyzing evaluation results.
+Running muxtree optimizer on module \sobel_accelerator..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~33 debug messages>
+
+6.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \sobel_core.
+  Optimizing cells in module \sobel_accelerator.
+  Optimizing cells in module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+Performed a total of 0 changes.
+
+6.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\sobel_core'.
+Finding identical cells in module `\sobel_accelerator'.
+Finding identical cells in module `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101'.
+Removed a total of 0 cells.
+
+6.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$261 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$164_Y, Q = \line1_2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$277 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \pixel_in, Q = \line1_2).
+Adding SRST signal on $procdff$262 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$155_Y, Q = \line1_3, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$281 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \pixel_in, Q = \line1_3).
+Adding SRST signal on $procdff$263 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$147_Y, Q = \line1_4, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$285 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \pixel_in, Q = \line1_4).
+Adding SRST signal on $procdff$264 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$140_Y, Q = \line2_0, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$289 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \line1_0, Q = \line2_0).
+Adding SRST signal on $procdff$265 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$129_Y, Q = \line2_1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$293 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \line1_1, Q = \line2_1).
+Adding SRST signal on $procdff$266 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$119_Y, Q = \line2_2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$297 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \line1_2, Q = \line2_2).
+Adding SRST signal on $procdff$267 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$110_Y, Q = \line2_3, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$301 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \line1_3, Q = \line2_3).
+Adding SRST signal on $procdff$268 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$102_Y, Q = \line2_4, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$305 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \line1_4, Q = \line2_4).
+Adding SRST signal on $procdff$269 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$95_Y, Q = \col, rval = 3'000).
+Adding EN signal on $auto$ff.cc:266:slice$309 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$93_Y, Q = \col).
+Adding SRST signal on $procdff$270 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$87_Y, Q = \row, rval = 3'000).
+Adding EN signal on $auto$ff.cc:266:slice$311 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $add$rtl/sobel_window.v:212$37_Y, Q = \row).
+Adding SRST signal on $procdff$271 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$77_Y, Q = \row1_d1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$315 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \line2_current, Q = \row1_d1).
+Adding SRST signal on $procdff$272 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$72_Y, Q = \row1_d2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$317 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \row1_d1, Q = \row1_d2).
+Adding SRST signal on $procdff$273 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$67_Y, Q = \row2_d1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$319 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \line1_current, Q = \row2_d1).
+Adding SRST signal on $procdff$274 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$62_Y, Q = \row2_d2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$321 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \row2_d1, Q = \row2_d2).
+Adding SRST signal on $procdff$275 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$57_Y, Q = \row3_d1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$323 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \pixel_in, Q = \row3_d1).
+Adding SRST signal on $procdff$276 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$52_Y, Q = \row3_d2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$325 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \row3_d1, Q = \row3_d2).
+Adding SRST signal on $procdff$249 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$230_Y, Q = \p1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$327 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \row1_d2, Q = \p1).
+Adding SRST signal on $procdff$250 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$225_Y, Q = \p2, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$329 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \row1_d1, Q = \p2).
+Adding SRST signal on $procdff$251 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$220_Y, Q = \p3, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$331 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \line2_current, Q = \p3).
+Adding SRST signal on $procdff$252 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$215_Y, Q = \p4, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$333 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \row2_d2, Q = \p4).
+Adding SRST signal on $procdff$253 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$210_Y, Q = \p5, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$335 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \row2_d1, Q = \p5).
+Adding SRST signal on $procdff$254 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$205_Y, Q = \p6, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$337 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \line1_current, Q = \p6).
+Adding SRST signal on $procdff$255 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$200_Y, Q = \p7, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$339 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \row3_d2, Q = \p7).
+Adding SRST signal on $procdff$256 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$195_Y, Q = \p8, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$341 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \row3_d1, Q = \p8).
+Adding SRST signal on $procdff$257 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$190_Y, Q = \p9, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$343 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \pixel_in, Q = \p9).
+Adding SRST signal on $procdff$258 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$45_Y, Q = \window_valid, rval = 1'0).
+Adding SRST signal on $procdff$259 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$185_Y, Q = \line1_0, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$350 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \pixel_in, Q = \line1_0).
+Adding SRST signal on $procdff$260 ($dff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = $procmux$174_Y, Q = \line1_1, rval = 8'00000000).
+Adding EN signal on $auto$ff.cc:266:slice$354 ($sdff) from module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101 (D = \pixel_in, Q = \line1_1).
+
+6.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \sobel_core..
+Finding unused cells or wires in module \sobel_accelerator..
+Finding unused cells or wires in module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101..
+Removed 68 unused cells and 197 unused wires.
+<suppressed ~70 debug messages>
+
+6.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+Optimizing module sobel_accelerator.
+Optimizing module sobel_core.
+
+6.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \sobel_accelerator..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sobel_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~7 debug messages>
+
+6.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+  Optimizing cells in module \sobel_accelerator.
+  Optimizing cells in module \sobel_core.
+Performed a total of 0 changes.
+
+6.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101'.
+<suppressed ~33 debug messages>
+Finding identical cells in module `\sobel_accelerator'.
+Finding identical cells in module `\sobel_core'.
+Removed a total of 11 cells.
+
+6.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101..
+Finding unused cells or wires in module \sobel_accelerator..
+Finding unused cells or wires in module \sobel_core..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~1 debug messages>
+
+6.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+Optimizing module sobel_accelerator.
+Optimizing module sobel_core.
+
+6.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+6.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Running muxtree optimizer on module \sobel_accelerator..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Running muxtree optimizer on module \sobel_core..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~7 debug messages>
+
+6.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+  Optimizing cells in module \sobel_accelerator.
+  Optimizing cells in module \sobel_core.
+Performed a total of 0 changes.
+
+6.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `$paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101'.
+Finding identical cells in module `\sobel_accelerator'.
+Finding identical cells in module `\sobel_core'.
+Removed a total of 0 cells.
+
+6.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+6.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101..
+Finding unused cells or wires in module \sobel_accelerator..
+Finding unused cells or wires in module \sobel_core..
+
+6.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+Optimizing module sobel_accelerator.
+Optimizing module sobel_core.
+
+6.23. Finished OPT passes. (There is nothing left to do.)
+
+7. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\sobel_window\IMAGE_WIDTH=s32'00000000000000000000000000000101.
+Deleting now unused module sobel_core.
+<suppressed ~2 debug messages>
+
+8. Executing CHECK pass (checking for obvious problems).
+Checking module sobel_accelerator...
+Found and reported 0 problems.
+
+9. Printing statistics.
+
+=== sobel_accelerator ===
+
+   Number of wires:                 98
+   Number of wire bits:            612
+   Number of public wires:          65
+   Number of public wire bits:     463
+   Number of ports:                  6
+   Number of port bits:             20
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 65
+     $add                            9
+     $eq                             4
+     $ge                             2
+     $gt                             1
+     $logic_and                      1
+     $logic_not                      1
+     $mux                            5
+     $ne                             1
+     $neg                            3
+     $not                            1
+     $pmux                           2
+     $reduce_and                     6
+     $reduce_or                      1
+     $scopeinfo                      2
+     $sdff                           1
+     $sdffe                         21
+     $sub                            4
+
+End of script. Logfile hash: c396b73622, CPU: user 0.02s system 0.01s, MEM: 18.25 MB peak
+Yosys 0.47+121 (git sha1 98b4affc4, g++ 13.2.0-23ubuntu4 -fPIC -O3)
+Time spent: 24% 5x opt_expr (0 sec), 13% 3x opt_clean (0 sec), ...

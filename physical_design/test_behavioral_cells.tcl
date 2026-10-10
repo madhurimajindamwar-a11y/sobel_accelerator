@@ -1,0 +1,45 @@
+read_lef /work/physical_design/lef/sky130_sobel.lef
+read_liberty /pdk/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a211oi/sky130_fd_sc_hd__a211oi.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a21boi/sky130_fd_sc_hd__a21boi.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a21oi/sky130_fd_sc_hd__a21oi.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a221oi/sky130_fd_sc_hd__a221oi.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a222oi/sky130_fd_sc_hd__a222oi.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a22o/sky130_fd_sc_hd__a22o.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a22oi/sky130_fd_sc_hd__a22oi.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a31oi/sky130_fd_sc_hd__a31oi.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a32oi/sky130_fd_sc_hd__a32oi.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a41oi/sky130_fd_sc_hd__a41oi.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/and2/sky130_fd_sc_hd__and2.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/and3/sky130_fd_sc_hd__and3.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/clkinv/sky130_fd_sc_hd__clkinv.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/dfxtp/sky130_fd_sc_hd__dfxtp.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/lpflow_inputiso1p/sky130_fd_sc_hd__lpflow_inputiso1p.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/lpflow_isobufsrc/sky130_fd_sc_hd__lpflow_isobufsrc.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/maj3/sky130_fd_sc_hd__maj3.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/mux2i/sky130_fd_sc_hd__mux2i.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nand2/sky130_fd_sc_hd__nand2.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nand2b/sky130_fd_sc_hd__nand2b.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nand3/sky130_fd_sc_hd__nand3.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nor2/sky130_fd_sc_hd__nor2.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nor3/sky130_fd_sc_hd__nor3.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nor3b/sky130_fd_sc_hd__nor3b.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nor4/sky130_fd_sc_hd__nor4.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o2111a/sky130_fd_sc_hd__o2111a.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o211a/sky130_fd_sc_hd__o211a.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o211ai/sky130_fd_sc_hd__o211ai.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o21a/sky130_fd_sc_hd__o21a.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o21ai/sky130_fd_sc_hd__o21ai.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o21bai/sky130_fd_sc_hd__o21bai.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o22ai/sky130_fd_sc_hd__o22ai.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o31a/sky130_fd_sc_hd__o31a.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/or3/sky130_fd_sc_hd__or3.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/xnor2/sky130_fd_sc_hd__xnor2.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/xnor3/sky130_fd_sc_hd__xnor3.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/xor2/sky130_fd_sc_hd__xor2.behavioral.pp.v
+read_verilog /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/xor3/sky130_fd_sc_hd__xor3.behavioral.pp.v
+read_verilog /work/synthesis/sobel_sky130_final.v
+link_design sobel_accelerator
+puts "=== INSTANCE COUNT ==="
+puts [llength [get_cells *]]
+report_design_area

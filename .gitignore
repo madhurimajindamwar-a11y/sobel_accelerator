@@ -1,0 +1,7 @@
+*.vvp
+*_sim
+mapped_sobel_sim
+sobel_gls
+sobel_sim
+*.o
+*.log~

@@ -1,0 +1,4 @@
+help add_global_connection
+help global_connect
+help connect_global_net
+exit

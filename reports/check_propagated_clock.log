@@ -1,0 +1,218 @@
+OpenROAD 0.9.0 1415572a73
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Notice 0: Reading LEF file:  /work/physical_design/lef/merged_sky130_cts.lef
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 792.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 886.
+
+Warning: /pdk/lib/sky130_fd_sc_hd__tt_025C_1v80.lib line 31, default_operating_condition tt_025C_1v80 not found.
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 972.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 1057.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 1171.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 1302.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 1404.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 1512.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 1606.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 1714.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 1818.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 1893.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2006.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2102.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2215.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2281.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2349.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2423.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2503.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2589.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2691.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2757.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2825.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2900.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 2980.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3039.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3184.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3258.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3334.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3426.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3524.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3601.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3669.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3749.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3818.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3904.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 3987.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 4081.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 4191.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 4286.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 4385.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 4469.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 4566.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 4658.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 4755.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 4855.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 4944.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 5032.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 5198.
+
+Notice 0: Warning: WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /work/physical_design/lef/merged_sky130_cts.lef at line 5281.
+
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 50 library cells
+Notice 0: Finished LEF file:  /work/physical_design/lef/merged_sky130_cts.lef
+===== CHECK CLOCK COMMANDS =====
+set_propagated_clock objects
+report_checks
+report_checks   [-from from_list|-rise_from from_list|-fall_from from_list] [-through through_list|-rise_through through_list|-fall_through through_list] [-to to_list|-rise_to to_list|-fall_to to_list] [-unconstrained] [-path_delay min|min_rise|min_fall|max|max_rise|max_fall|min_max] [-corner corner_name] [-group_count path_count]  [-endpoint_count path_count] [-unique_paths_to_endpoint] [-slack_max slack_max] [-slack_min slack_min] [-sort_by_slack] [-path_group group_name] [-format full|full_clock|full_clock_expanded|short|end|summary] [-fields [capacitance|slew|input_pin|net]] [-digits digits] [-no_line_splits] [> filename] [>> filename]
+estimate_parasitics -placement|-global_routing
+===== CHECK CLOCK OBJECT =====
+Clock                   Period          Waveform
+----------------------------------------------------
+clk                      10.00        0.00      5.00

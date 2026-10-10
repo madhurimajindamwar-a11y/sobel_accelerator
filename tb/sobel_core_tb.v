@@ -22,6 +22,8 @@ module sobel_core_tb;
     initial begin
 
         // Test pattern 1
+        $dumpfile("sobel.vcd");
+        $dumpvars(0, sobel_core_tb);
         p1 = 10; p2 = 10; p3 = 10;
         p4 = 10; p5 = 10; p6 = 10;
         p7 = 10; p8 = 10; p9 = 10;
@@ -49,9 +51,6 @@ module sobel_core_tb;
         $display("Test 3 Edge = %d", edge_pixel);
 
         $finish;
-        $dumpfile("sobel.vcd");
-        $dumpvars(0, sobel_core_tb);
-        
 
     end
 

@@ -1,0 +1,55 @@
+OpenSTA 3.1.0 2996e37a3a Copyright (c) 2026, Parallax Software, Inc.
+License GPLv3: GNU GPL version 3 <http://gnu.org/licenses/gpl.html>
+
+This is free software, and you are free to change and redistribute it
+under certain conditions; type `show_copying' for details. 
+This program comes with ABSOLUTELY NO WARRANTY; for details type `show_warranty'.
+Warning 1171: /pdk/lib/sky130_fd_sc_hd__tt_025C_1v80.lib line 23, default_fanout_load is 0.0.
+Startpoint: p3[0] (input port clocked by core_clk)
+Endpoint: edge_pixel[1] (output port clocked by core_clk)
+Path Group: core_clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock core_clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 v input external delay
+   0.00    0.00 v p3[0] (in)
+   0.19    0.19 v _338_/X (sky130_fd_sc_hd__and2_0)
+   0.39    0.58 v _463_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    0.97 v _464_/X (sky130_fd_sc_hd__maj3_1)
+   0.24    1.21 ^ _466_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.38    1.59 v _476_/X (sky130_fd_sc_hd__xnor3_1)
+   0.38    1.97 v _490_/X (sky130_fd_sc_hd__xnor3_1)
+   0.37    2.34 v _511_/X (sky130_fd_sc_hd__xnor3_1)
+   0.37    2.71 v _520_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    3.11 v _522_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    3.50 v _524_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    3.89 v _526_/X (sky130_fd_sc_hd__maj3_1)
+   0.36    4.24 v _568_/X (sky130_fd_sc_hd__maj3_1)
+   0.19    4.43 v _569_/X (sky130_fd_sc_hd__and2_0)
+   0.22    4.64 ^ _602_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.37    5.02 v _603_/X (sky130_fd_sc_hd__mux2_1)
+   0.38    5.40 v _605_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    5.79 v _606_/X (sky130_fd_sc_hd__maj3_1)
+   0.20    5.98 ^ _608_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.18    6.17 ^ _610_/X (sky130_fd_sc_hd__o21a_1)
+   0.20    6.37 ^ _611_/X (sky130_fd_sc_hd__maj3_1)
+   0.28    6.66 ^ _612_/X (sky130_fd_sc_hd__maj3_1)
+   0.08    6.74 v _628_/Y (sky130_fd_sc_hd__o211ai_1)
+   0.00    6.74 v edge_pixel[1] (out)
+           6.74   data arrival time
+
+  10.00   10.00   clock core_clk (rise edge)
+   0.00   10.00   clock network delay (ideal)
+   0.00   10.00   clock reconvergence pessimism
+   0.00   10.00   output external delay
+          10.00   data required time
+---------------------------------------------------------
+          10.00   data required time
+          -6.74   data arrival time
+---------------------------------------------------------
+           3.26   slack (MET)
+
+

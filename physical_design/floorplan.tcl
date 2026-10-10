@@ -1,0 +1,57 @@
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/tech/sky130_fd_sc_hd.tlef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a211oi/sky130_fd_sc_hd__a211oi_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a21boi/sky130_fd_sc_hd__a21boi_0.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a21oi/sky130_fd_sc_hd__a21oi_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a221oi/sky130_fd_sc_hd__a221oi_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a222oi/sky130_fd_sc_hd__a222oi_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a31oi/sky130_fd_sc_hd__a31oi_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a32oi/sky130_fd_sc_hd__a32oi_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/a41oi/sky130_fd_sc_hd__a41oi_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/and2/sky130_fd_sc_hd__and2_0.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/and3/sky130_fd_sc_hd__and3_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/clkinv/sky130_fd_sc_hd__clkinv_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/dfxtp/sky130_fd_sc_hd__dfxtp_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/lpflow_inputiso1p/sky130_fd_sc_hd__lpflow_inputiso1p_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/lpflow_isobufsrc/sky130_fd_sc_hd__lpflow_isobufsrc_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/maj3/sky130_fd_sc_hd__maj3_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/mux2i/sky130_fd_sc_hd__mux2i_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nand2/sky130_fd_sc_hd__nand2_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nand2b/sky130_fd_sc_hd__nand2b_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nand3/sky130_fd_sc_hd__nand3_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nor2/sky130_fd_sc_hd__nor2_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nor3/sky130_fd_sc_hd__nor3_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nor3b/sky130_fd_sc_hd__nor3b_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/nor4/sky130_fd_sc_hd__nor4_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o2111a/sky130_fd_sc_hd__o2111a_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o211a/sky130_fd_sc_hd__o211a_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o211ai/sky130_fd_sc_hd__o211ai_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o21a/sky130_fd_sc_hd__o21a_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o21ai/sky130_fd_sc_hd__o21ai_0.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o21bai/sky130_fd_sc_hd__o21bai_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o22ai/sky130_fd_sc_hd__o22ai_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/o31a/sky130_fd_sc_hd__o31a_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/or3/sky130_fd_sc_hd__or3_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/xnor2/sky130_fd_sc_hd__xnor2_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/xnor3/sky130_fd_sc_hd__xnor3_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/xor2/sky130_fd_sc_hd__xor2_1.lef
+read_lef /pdk/skywater-pdk-libs-sky130_fd_sc_hd/cells/xor3/sky130_fd_sc_hd__xor3_1.lef
+read_liberty /pdk/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog /work/synthesis/sobel_sky130_final.v
+link_design sobel_accelerator
+
+puts "=== START FLOORPLAN INITIALIZATION ==="
+
+initialize_floorplan \
+    -utilization 50 \
+    -aspect_ratio 1.0 \
+    -core_space 10 \
+    -site unithd
+
+report_design_area
+
+write_def /work/physical_design/sobel_floorplan.def
+write_db /work/physical_design/sobel_floorplan.odb
+
+puts "=== FLOORPLAN INITIALIZATION SUCCESS ==="
+
+exit

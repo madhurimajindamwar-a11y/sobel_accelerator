@@ -1,0 +1,97 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2024  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.47+121 (git sha1 98b4affc4, g++ 13.2.0-23ubuntu4 -fPIC -O3)
+
+-- Running command `
+read_liberty -lib /home/vsduser/Desktop/OpenSTA/vsdbabysoc/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+read_verilog synthesis/sobel_accelerator_candidate_sky130.v
+hierarchy -check -top sobel_accelerator
+check
+stat -liberty /home/vsduser/Desktop/OpenSTA/vsdbabysoc/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+' --
+
+1. Executing Liberty frontend: /home/vsduser/Desktop/OpenSTA/vsdbabysoc/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: synthesis/sobel_accelerator_candidate_sky130.v
+Parsing Verilog input from `synthesis/sobel_accelerator_candidate_sky130.v' to AST representation.
+Generating RTLIL representation for module `\sobel_accelerator'.
+Successfully finished Verilog frontend.
+
+3. Executing HIERARCHY pass (managing design hierarchy).
+
+3.1. Analyzing design hierarchy..
+Top module:  \sobel_accelerator
+
+3.2. Analyzing design hierarchy..
+Top module:  \sobel_accelerator
+Removed 0 unused modules.
+
+4. Executing CHECK pass (checking for obvious problems).
+Checking module sobel_accelerator...
+Found and reported 0 problems.
+
+5. Printing statistics.
+
+=== sobel_accelerator ===
+
+   Number of wires:                851
+   Number of wire bits:           1163
+   Number of public wires:         851
+   Number of public wire bits:    1163
+   Number of ports:                  6
+   Number of port bits:             20
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                963
+     sky130_fd_sc_hd__a211oi_1      66
+     sky130_fd_sc_hd__a21boi_0       4
+     sky130_fd_sc_hd__a21o_1         3
+     sky130_fd_sc_hd__a21oi_1       58
+     sky130_fd_sc_hd__a221o_1        1
+     sky130_fd_sc_hd__a221oi_1       8
+     sky130_fd_sc_hd__a222oi_1      16
+     sky130_fd_sc_hd__a22o_1         1
+     sky130_fd_sc_hd__a31oi_1        1
+     sky130_fd_sc_hd__a32oi_1        1
+     sky130_fd_sc_hd__a41oi_1        2
+     sky130_fd_sc_hd__and2_0        16
+     sky130_fd_sc_hd__and3_1         3
+     sky130_fd_sc_hd__clkinv_1      23
+     sky130_fd_sc_hd__dfxtp_1      159
+     sky130_fd_sc_hd__lpflow_inputiso1p_1      4
+     sky130_fd_sc_hd__lpflow_isobufsrc_1      5
+     sky130_fd_sc_hd__maj3_1        63
+     sky130_fd_sc_hd__mux2i_1       31
+     sky130_fd_sc_hd__nand2_1      123
+     sky130_fd_sc_hd__nand2b_1       7
+     sky130_fd_sc_hd__nand3_1        7
+     sky130_fd_sc_hd__nor2_1       131
+     sky130_fd_sc_hd__nor3_1        17
+     sky130_fd_sc_hd__nor3b_1        3
+     sky130_fd_sc_hd__nor4_1         1
+     sky130_fd_sc_hd__o211ai_1       1
+     sky130_fd_sc_hd__o21a_1         1
+     sky130_fd_sc_hd__o21ai_0       14
+     sky130_fd_sc_hd__o21bai_1       8
+     sky130_fd_sc_hd__o22ai_1        6
+     sky130_fd_sc_hd__o31a_1         1
+     sky130_fd_sc_hd__o31ai_1        1
+     sky130_fd_sc_hd__or3_1          1
+     sky130_fd_sc_hd__or4b_1         1
+     sky130_fd_sc_hd__xnor2_1       76
+     sky130_fd_sc_hd__xnor3_1       40
+     sky130_fd_sc_hd__xor2_1        44
+     sky130_fd_sc_hd__xor3_1        15
+
+   Chip area for module '\sobel_accelerator': 9175.049600
+     of which used for sequential elements: 3183.052800 (34.69%)
+
+End of script. Logfile hash: 9e457686e2, CPU: user 0.17s system 0.06s, MEM: 47.88 MB peak
+Yosys 0.47+121 (git sha1 98b4affc4, g++ 13.2.0-23ubuntu4 -fPIC -O3)
+Time spent: 41% 1x stat (0 sec), 37% 2x read_liberty (0 sec), ...
