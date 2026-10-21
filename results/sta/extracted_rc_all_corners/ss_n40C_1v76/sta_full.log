@@ -1,0 +1,1309 @@
+OpenROAD 26Q2-1164-g08f67ee5ec 
+Features included (+) or not (-): +GPU +GUI +Python
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 792.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 886.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 972.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 1057.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 1171.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 1302.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 1404.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 1512.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 1606.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 1714.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 1818.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 1893.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2006.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2102.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2215.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2281.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2349.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2423.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2503.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2589.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2691.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2757.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2825.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2900.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 2980.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3039.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3184.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3258.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3334.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3426.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3524.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3601.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3669.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3749.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3818.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3904.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 3987.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 4081.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 4191.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 4286.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 4385.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 4469.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 4566.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 4658.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 4755.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 4855.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 4944.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 5032.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 5198.
+
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef at line 5281.
+
+[INFO ODB-0227] LEF file: /home/vsduser/Desktop/sobel_accelerator_github/physical_design/lef/merged_sky130_cts.lef, created 13 layers, 25 vias, 50 library cells
+[INFO ODB-0127] Reading DEF file: /home/vsduser/Desktop/sobel_accelerator_github/physical_design/routing/sobel_detailed_pinfix.def
+[INFO ODB-0128] Design: sobel_accelerator_balanced
+[INFO ODB-0130]     Created 22 pins.
+[INFO ODB-0131]     Created 984 components and 5337 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 1968 connections.
+[INFO ODB-0133]     Created 1004 nets and 3369 connections.
+[INFO ODB-0134] Finished DEF file: /home/vsduser/Desktop/sobel_accelerator_github/physical_design/routing/sobel_detailed_pinfix.def
+[WARNING ORD-2056] The following 378 liberty cell(s) do not have LEF masters and will be marked as dont-use:
+  sky130_fd_sc_hd__a2111o_1
+  sky130_fd_sc_hd__a2111o_2
+  sky130_fd_sc_hd__a2111o_4
+  sky130_fd_sc_hd__a2111oi_0
+  sky130_fd_sc_hd__a2111oi_1
+  sky130_fd_sc_hd__a2111oi_2
+  sky130_fd_sc_hd__a2111oi_4
+  sky130_fd_sc_hd__a211o_1
+  sky130_fd_sc_hd__a211o_2
+  sky130_fd_sc_hd__a211o_4
+  sky130_fd_sc_hd__a211oi_2
+  sky130_fd_sc_hd__a211oi_4
+  sky130_fd_sc_hd__a21bo_1
+  sky130_fd_sc_hd__a21bo_2
+  sky130_fd_sc_hd__a21bo_4
+  sky130_fd_sc_hd__a21boi_1
+  sky130_fd_sc_hd__a21boi_2
+  sky130_fd_sc_hd__a21boi_4
+  sky130_fd_sc_hd__a21o_1
+  sky130_fd_sc_hd__a21o_2
+  sky130_fd_sc_hd__a21o_4
+  sky130_fd_sc_hd__a21oi_2
+  sky130_fd_sc_hd__a21oi_4
+  sky130_fd_sc_hd__a221o_1
+  sky130_fd_sc_hd__a221o_2
+  sky130_fd_sc_hd__a221o_4
+  sky130_fd_sc_hd__a221oi_2
+  sky130_fd_sc_hd__a221oi_4
+  sky130_fd_sc_hd__a22o_2
+  sky130_fd_sc_hd__a22o_4
+  sky130_fd_sc_hd__a22oi_2
+  sky130_fd_sc_hd__a22oi_4
+  sky130_fd_sc_hd__a2bb2o_1
+  sky130_fd_sc_hd__a2bb2o_2
+  sky130_fd_sc_hd__a2bb2o_4
+  sky130_fd_sc_hd__a2bb2oi_1
+  sky130_fd_sc_hd__a2bb2oi_2
+  sky130_fd_sc_hd__a2bb2oi_4
+  sky130_fd_sc_hd__a311o_1
+  sky130_fd_sc_hd__a311o_2
+  sky130_fd_sc_hd__a311o_4
+  sky130_fd_sc_hd__a311oi_1
+  sky130_fd_sc_hd__a311oi_2
+  sky130_fd_sc_hd__a311oi_4
+  sky130_fd_sc_hd__a31o_1
+  sky130_fd_sc_hd__a31o_2
+  sky130_fd_sc_hd__a31o_4
+  sky130_fd_sc_hd__a31oi_2
+  sky130_fd_sc_hd__a31oi_4
+  sky130_fd_sc_hd__a32o_1
+  sky130_fd_sc_hd__a32o_2
+  sky130_fd_sc_hd__a32o_4
+  sky130_fd_sc_hd__a32oi_2
+  sky130_fd_sc_hd__a32oi_4
+  sky130_fd_sc_hd__a41o_1
+  sky130_fd_sc_hd__a41o_2
+  sky130_fd_sc_hd__a41o_4
+  sky130_fd_sc_hd__a41oi_2
+  sky130_fd_sc_hd__a41oi_4
+  sky130_fd_sc_hd__and2_1
+  sky130_fd_sc_hd__and2_2
+  sky130_fd_sc_hd__and2_4
+  sky130_fd_sc_hd__and2b_1
+  sky130_fd_sc_hd__and2b_2
+  sky130_fd_sc_hd__and2b_4
+  sky130_fd_sc_hd__and3_2
+  sky130_fd_sc_hd__and3_4
+  sky130_fd_sc_hd__and3b_1
+  sky130_fd_sc_hd__and3b_2
+  sky130_fd_sc_hd__and3b_4
+  sky130_fd_sc_hd__and4_1
+  sky130_fd_sc_hd__and4_2
+  sky130_fd_sc_hd__and4_4
+  sky130_fd_sc_hd__and4b_1
+  sky130_fd_sc_hd__and4b_2
+  sky130_fd_sc_hd__and4b_4
+  sky130_fd_sc_hd__and4bb_1
+  sky130_fd_sc_hd__and4bb_2
+  sky130_fd_sc_hd__and4bb_4
+  sky130_fd_sc_hd__bufbuf_16
+  sky130_fd_sc_hd__bufbuf_8
+  sky130_fd_sc_hd__bufinv_16
+  sky130_fd_sc_hd__bufinv_8
+  sky130_fd_sc_hd__clkdlybuf4s15_1
+  sky130_fd_sc_hd__clkdlybuf4s15_2
+  sky130_fd_sc_hd__clkdlybuf4s18_1
+  sky130_fd_sc_hd__clkdlybuf4s18_2
+  sky130_fd_sc_hd__clkdlybuf4s25_1
+  sky130_fd_sc_hd__clkdlybuf4s25_2
+  sky130_fd_sc_hd__clkdlybuf4s50_1
+  sky130_fd_sc_hd__clkdlybuf4s50_2
+  sky130_fd_sc_hd__clkinv_16
+  sky130_fd_sc_hd__clkinv_2
+  sky130_fd_sc_hd__clkinv_4
+  sky130_fd_sc_hd__clkinv_8
+  sky130_fd_sc_hd__clkinvlp_2
+  sky130_fd_sc_hd__clkinvlp_4
+  sky130_fd_sc_hd__conb_1
+  sky130_fd_sc_hd__decap_12
+  sky130_fd_sc_hd__decap_3
+  sky130_fd_sc_hd__decap_4
+  sky130_fd_sc_hd__decap_6
+  sky130_fd_sc_hd__decap_8
+  sky130_fd_sc_hd__dfbbn_1
+  sky130_fd_sc_hd__dfbbn_2
+  sky130_fd_sc_hd__dfbbp_1
+  sky130_fd_sc_hd__dfrbp_1
+  sky130_fd_sc_hd__dfrbp_2
+  sky130_fd_sc_hd__dfrtn_1
+  sky130_fd_sc_hd__dfrtp_1
+  sky130_fd_sc_hd__dfrtp_2
+  sky130_fd_sc_hd__dfrtp_4
+  sky130_fd_sc_hd__dfsbp_1
+  sky130_fd_sc_hd__dfsbp_2
+  sky130_fd_sc_hd__dfstp_1
+  sky130_fd_sc_hd__dfstp_2
+  sky130_fd_sc_hd__dfstp_4
+  sky130_fd_sc_hd__dfxbp_1
+  sky130_fd_sc_hd__dfxbp_2
+  sky130_fd_sc_hd__dfxtp_2
+  sky130_fd_sc_hd__dfxtp_4
+  sky130_fd_sc_hd__diode_2
+  sky130_fd_sc_hd__dlclkp_1
+  sky130_fd_sc_hd__dlclkp_2
+  sky130_fd_sc_hd__dlclkp_4
+  sky130_fd_sc_hd__dlrbn_1
+  sky130_fd_sc_hd__dlrbn_2
+  sky130_fd_sc_hd__dlrbp_1
+  sky130_fd_sc_hd__dlrbp_2
+  sky130_fd_sc_hd__dlrtn_1
+  sky130_fd_sc_hd__dlrtn_2
+  sky130_fd_sc_hd__dlrtn_4
+  sky130_fd_sc_hd__dlrtp_1
+  sky130_fd_sc_hd__dlrtp_2
+  sky130_fd_sc_hd__dlrtp_4
+  sky130_fd_sc_hd__dlxbn_1
+  sky130_fd_sc_hd__dlxbn_2
+  sky130_fd_sc_hd__dlxbp_1
+  sky130_fd_sc_hd__dlxtn_1
+  sky130_fd_sc_hd__dlxtn_2
+  sky130_fd_sc_hd__dlxtn_4
+  sky130_fd_sc_hd__dlxtp_1
+  sky130_fd_sc_hd__dlygate4sd1_1
+  sky130_fd_sc_hd__dlygate4sd2_1
+  sky130_fd_sc_hd__dlygate4sd3_1
+  sky130_fd_sc_hd__dlymetal6s2s_1
+  sky130_fd_sc_hd__dlymetal6s4s_1
+  sky130_fd_sc_hd__dlymetal6s6s_1
+  sky130_fd_sc_hd__ebufn_1
+  sky130_fd_sc_hd__ebufn_2
+  sky130_fd_sc_hd__ebufn_4
+  sky130_fd_sc_hd__ebufn_8
+  sky130_fd_sc_hd__edfxbp_1
+  sky130_fd_sc_hd__edfxtp_1
+  sky130_fd_sc_hd__einvn_0
+  sky130_fd_sc_hd__einvn_1
+  sky130_fd_sc_hd__einvn_2
+  sky130_fd_sc_hd__einvn_4
+  sky130_fd_sc_hd__einvn_8
+  sky130_fd_sc_hd__einvp_1
+  sky130_fd_sc_hd__einvp_2
+  sky130_fd_sc_hd__einvp_4
+  sky130_fd_sc_hd__einvp_8
+  sky130_fd_sc_hd__fa_1
+  sky130_fd_sc_hd__fa_2
+  sky130_fd_sc_hd__fa_4
+  sky130_fd_sc_hd__fah_1
+  sky130_fd_sc_hd__fahcin_1
+  sky130_fd_sc_hd__fahcon_1
+  sky130_fd_sc_hd__ha_1
+  sky130_fd_sc_hd__ha_2
+  sky130_fd_sc_hd__ha_4
+  sky130_fd_sc_hd__inv_1
+  sky130_fd_sc_hd__inv_12
+  sky130_fd_sc_hd__inv_16
+  sky130_fd_sc_hd__inv_2
+  sky130_fd_sc_hd__inv_4
+  sky130_fd_sc_hd__inv_6
+  sky130_fd_sc_hd__inv_8
+  sky130_fd_sc_hd__lpflow_bleeder_1
+  sky130_fd_sc_hd__lpflow_clkbufkapwr_1
+  sky130_fd_sc_hd__lpflow_clkbufkapwr_16
+  sky130_fd_sc_hd__lpflow_clkbufkapwr_2
+  sky130_fd_sc_hd__lpflow_clkbufkapwr_4
+  sky130_fd_sc_hd__lpflow_clkbufkapwr_8
+  sky130_fd_sc_hd__lpflow_clkinvkapwr_1
+  sky130_fd_sc_hd__lpflow_clkinvkapwr_16
+  sky130_fd_sc_hd__lpflow_clkinvkapwr_2
+  sky130_fd_sc_hd__lpflow_clkinvkapwr_4
+  sky130_fd_sc_hd__lpflow_clkinvkapwr_8
+  sky130_fd_sc_hd__lpflow_decapkapwr_12
+  sky130_fd_sc_hd__lpflow_decapkapwr_3
+  sky130_fd_sc_hd__lpflow_decapkapwr_4
+  sky130_fd_sc_hd__lpflow_decapkapwr_6
+  sky130_fd_sc_hd__lpflow_decapkapwr_8
+  sky130_fd_sc_hd__lpflow_inputiso0n_1
+  sky130_fd_sc_hd__lpflow_inputiso0p_1
+  sky130_fd_sc_hd__lpflow_inputiso1n_1
+  sky130_fd_sc_hd__lpflow_inputisolatch_1
+  sky130_fd_sc_hd__lpflow_isobufsrc_16
+  sky130_fd_sc_hd__lpflow_isobufsrc_2
+  sky130_fd_sc_hd__lpflow_isobufsrc_4
+  sky130_fd_sc_hd__lpflow_isobufsrc_8
+  sky130_fd_sc_hd__lpflow_isobufsrckapwr_16
+  sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1
+  sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2
+  sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4
+  sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4
+  sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1
+  sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2
+  sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4
+  sky130_fd_sc_hd__macro_sparecell
+  sky130_fd_sc_hd__maj3_2
+  sky130_fd_sc_hd__maj3_4
+  sky130_fd_sc_hd__mux2_1
+  sky130_fd_sc_hd__mux2_2
+  sky130_fd_sc_hd__mux2_4
+  sky130_fd_sc_hd__mux2_8
+  sky130_fd_sc_hd__mux2i_2
+  sky130_fd_sc_hd__mux2i_4
+  sky130_fd_sc_hd__mux4_1
+  sky130_fd_sc_hd__mux4_2
+  sky130_fd_sc_hd__mux4_4
+  sky130_fd_sc_hd__nand2_2
+  sky130_fd_sc_hd__nand2_4
+  sky130_fd_sc_hd__nand2_8
+  sky130_fd_sc_hd__nand2b_2
+  sky130_fd_sc_hd__nand2b_4
+  sky130_fd_sc_hd__nand3_2
+  sky130_fd_sc_hd__nand3_4
+  sky130_fd_sc_hd__nand3b_1
+  sky130_fd_sc_hd__nand3b_2
+  sky130_fd_sc_hd__nand3b_4
+  sky130_fd_sc_hd__nand4_1
+  sky130_fd_sc_hd__nand4_2
+  sky130_fd_sc_hd__nand4_4
+  sky130_fd_sc_hd__nand4b_1
+  sky130_fd_sc_hd__nand4b_2
+  sky130_fd_sc_hd__nand4b_4
+  sky130_fd_sc_hd__nand4bb_1
+  sky130_fd_sc_hd__nand4bb_2
+  sky130_fd_sc_hd__nand4bb_4
+  sky130_fd_sc_hd__nor2_2
+  sky130_fd_sc_hd__nor2_4
+  sky130_fd_sc_hd__nor2_8
+  sky130_fd_sc_hd__nor2b_1
+  sky130_fd_sc_hd__nor2b_2
+  sky130_fd_sc_hd__nor2b_4
+  sky130_fd_sc_hd__nor3_2
+  sky130_fd_sc_hd__nor3_4
+  sky130_fd_sc_hd__nor3b_2
+  sky130_fd_sc_hd__nor3b_4
+  sky130_fd_sc_hd__nor4_2
+  sky130_fd_sc_hd__nor4_4
+  sky130_fd_sc_hd__nor4b_1
+  sky130_fd_sc_hd__nor4b_2
+  sky130_fd_sc_hd__nor4b_4
+  sky130_fd_sc_hd__nor4bb_1
+  sky130_fd_sc_hd__nor4bb_2
+  sky130_fd_sc_hd__nor4bb_4
+  sky130_fd_sc_hd__o2111a_2
+  sky130_fd_sc_hd__o2111a_4
+  sky130_fd_sc_hd__o2111ai_1
+  sky130_fd_sc_hd__o2111ai_2
+  sky130_fd_sc_hd__o2111ai_4
+  sky130_fd_sc_hd__o211a_2
+  sky130_fd_sc_hd__o211a_4
+  sky130_fd_sc_hd__o211ai_2
+  sky130_fd_sc_hd__o211ai_4
+  sky130_fd_sc_hd__o21a_2
+  sky130_fd_sc_hd__o21a_4
+  sky130_fd_sc_hd__o21ai_1
+  sky130_fd_sc_hd__o21ai_2
+  sky130_fd_sc_hd__o21ai_4
+  sky130_fd_sc_hd__o21ba_1
+  sky130_fd_sc_hd__o21ba_2
+  sky130_fd_sc_hd__o21ba_4
+  sky130_fd_sc_hd__o21bai_2
+  sky130_fd_sc_hd__o21bai_4
+  sky130_fd_sc_hd__o221a_1
+  sky130_fd_sc_hd__o221a_2
+  sky130_fd_sc_hd__o221a_4
+  sky130_fd_sc_hd__o221ai_1
+  sky130_fd_sc_hd__o221ai_2
+  sky130_fd_sc_hd__o221ai_4
+  sky130_fd_sc_hd__o22a_1
+  sky130_fd_sc_hd__o22a_2
+  sky130_fd_sc_hd__o22a_4
+  sky130_fd_sc_hd__o22ai_2
+  sky130_fd_sc_hd__o22ai_4
+  sky130_fd_sc_hd__o2bb2a_1
+  sky130_fd_sc_hd__o2bb2a_2
+  sky130_fd_sc_hd__o2bb2a_4
+  sky130_fd_sc_hd__o2bb2ai_1
+  sky130_fd_sc_hd__o2bb2ai_2
+  sky130_fd_sc_hd__o2bb2ai_4
+  sky130_fd_sc_hd__o311a_1
+  sky130_fd_sc_hd__o311a_2
+  sky130_fd_sc_hd__o311a_4
+  sky130_fd_sc_hd__o311ai_0
+  sky130_fd_sc_hd__o311ai_1
+  sky130_fd_sc_hd__o311ai_2
+  sky130_fd_sc_hd__o311ai_4
+  sky130_fd_sc_hd__o31a_2
+  sky130_fd_sc_hd__o31a_4
+  sky130_fd_sc_hd__o31ai_1
+  sky130_fd_sc_hd__o31ai_2
+  sky130_fd_sc_hd__o31ai_4
+  sky130_fd_sc_hd__o32a_1
+  sky130_fd_sc_hd__o32a_2
+  sky130_fd_sc_hd__o32a_4
+  sky130_fd_sc_hd__o32ai_1
+  sky130_fd_sc_hd__o32ai_2
+  sky130_fd_sc_hd__o32ai_4
+  sky130_fd_sc_hd__o41a_1
+  sky130_fd_sc_hd__o41a_2
+  sky130_fd_sc_hd__o41a_4
+  sky130_fd_sc_hd__o41ai_1
+  sky130_fd_sc_hd__o41ai_2
+  sky130_fd_sc_hd__o41ai_4
+  sky130_fd_sc_hd__or2_0
+  sky130_fd_sc_hd__or2_1
+  sky130_fd_sc_hd__or2_2
+  sky130_fd_sc_hd__or2_4
+  sky130_fd_sc_hd__or2b_1
+  sky130_fd_sc_hd__or2b_2
+  sky130_fd_sc_hd__or2b_4
+  sky130_fd_sc_hd__or3_2
+  sky130_fd_sc_hd__or3_4
+  sky130_fd_sc_hd__or3b_1
+  sky130_fd_sc_hd__or3b_2
+  sky130_fd_sc_hd__or3b_4
+  sky130_fd_sc_hd__or4_1
+  sky130_fd_sc_hd__or4_2
+  sky130_fd_sc_hd__or4_4
+  sky130_fd_sc_hd__or4b_1
+  sky130_fd_sc_hd__or4b_2
+  sky130_fd_sc_hd__or4b_4
+  sky130_fd_sc_hd__or4bb_1
+  sky130_fd_sc_hd__or4bb_2
+  sky130_fd_sc_hd__or4bb_4
+  sky130_fd_sc_hd__probe_p_8
+  sky130_fd_sc_hd__probec_p_8
+  sky130_fd_sc_hd__sdfbbn_1
+  sky130_fd_sc_hd__sdfbbn_2
+  sky130_fd_sc_hd__sdfbbp_1
+  sky130_fd_sc_hd__sdfrbp_1
+  sky130_fd_sc_hd__sdfrbp_2
+  sky130_fd_sc_hd__sdfrtn_1
+  sky130_fd_sc_hd__sdfrtp_1
+  sky130_fd_sc_hd__sdfrtp_2
+  sky130_fd_sc_hd__sdfrtp_4
+  sky130_fd_sc_hd__sdfsbp_1
+  sky130_fd_sc_hd__sdfsbp_2
+  sky130_fd_sc_hd__sdfstp_1
+  sky130_fd_sc_hd__sdfstp_2
+  sky130_fd_sc_hd__sdfstp_4
+  sky130_fd_sc_hd__sdfxbp_1
+  sky130_fd_sc_hd__sdfxbp_2
+  sky130_fd_sc_hd__sdfxtp_1
+  sky130_fd_sc_hd__sdfxtp_2
+  sky130_fd_sc_hd__sdfxtp_4
+  sky130_fd_sc_hd__sdlclkp_1
+  sky130_fd_sc_hd__sdlclkp_2
+  sky130_fd_sc_hd__sdlclkp_4
+  sky130_fd_sc_hd__sedfxbp_1
+  sky130_fd_sc_hd__sedfxbp_2
+  sky130_fd_sc_hd__sedfxtp_1
+  sky130_fd_sc_hd__sedfxtp_2
+  sky130_fd_sc_hd__sedfxtp_4
+  sky130_fd_sc_hd__xnor2_2
+  sky130_fd_sc_hd__xnor2_4
+  sky130_fd_sc_hd__xnor3_2
+  sky130_fd_sc_hd__xnor3_4
+  sky130_fd_sc_hd__xor2_2
+  sky130_fd_sc_hd__xor2_4
+  sky130_fd_sc_hd__xor3_2
+  sky130_fd_sc_hd__xor3_4
+===== SETUP =====
+Startpoint: _1667_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: edge_pixel[5] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81 ^ _1667_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   1.59    3.39 ^ _1667_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.23    3.62 v _1439_/Y (sky130_fd_sc_hd__nor2_1)
+   1.43    5.05 ^ _1441_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.77    5.83 ^ _1493_/X (sky130_fd_sc_hd__xor2_1)
+   0.74    6.57 v _1517_/X (sky130_fd_sc_hd__xnor3_1)
+   0.73    7.29 v _1523_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.04 v _1524_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.79 v _1526_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    9.54 v _1527_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.25 v _1528_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.96 v _1529_/X (sky130_fd_sc_hd__maj3_1)
+   0.70   11.66 v _1545_/X (sky130_fd_sc_hd__maj3_1)
+   0.88   12.54 v _1547_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   12.93 ^ _1561_/X (sky130_fd_sc_hd__lpflow_isobufsrc_1)
+   0.22   13.16 v _1599_/X (sky130_fd_sc_hd__xor2_1)
+   0.70   13.85 v _1601_/X (sky130_fd_sc_hd__maj3_1)
+   0.72   14.57 v _1603_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   15.29 v _1605_/X (sky130_fd_sc_hd__maj3_1)
+   0.68   15.97 v _1607_/X (sky130_fd_sc_hd__maj3_1)
+   0.42   16.39 ^ _1621_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.46   16.85 v _1622_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.00   16.85 v edge_pixel[5] (out)
+          16.85   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (propagated)
+   0.00   10.00   clock reconvergence pessimism
+  -2.00    8.00   output external delay
+           8.00   data required time
+---------------------------------------------------------
+           8.00   data required time
+         -16.85   data arrival time
+---------------------------------------------------------
+          -8.85   slack (VIOLATED)
+
+
+Startpoint: _1667_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: edge_pixel[4] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81 ^ _1667_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   1.59    3.39 ^ _1667_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.23    3.62 v _1439_/Y (sky130_fd_sc_hd__nor2_1)
+   1.43    5.05 ^ _1441_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.77    5.83 ^ _1493_/X (sky130_fd_sc_hd__xor2_1)
+   0.74    6.57 v _1517_/X (sky130_fd_sc_hd__xnor3_1)
+   0.73    7.29 v _1523_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.04 v _1524_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.79 v _1526_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    9.54 v _1527_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.25 v _1528_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.96 v _1529_/X (sky130_fd_sc_hd__maj3_1)
+   0.70   11.66 v _1545_/X (sky130_fd_sc_hd__maj3_1)
+   0.88   12.54 v _1547_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   12.93 ^ _1567_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.25   13.18 v _1574_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.19   13.37 ^ _1576_/Y (sky130_fd_sc_hd__nand2_1)
+   0.14   13.52 v _1579_/Y (sky130_fd_sc_hd__nand3_1)
+   0.53   14.05 ^ _1580_/Y (sky130_fd_sc_hd__nor3_1)
+   0.23   14.28 v _1610_/Y (sky130_fd_sc_hd__nand2_1)
+   1.09   15.37 ^ _1611_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.96   16.33 v _1620_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.02   16.35 v edge_pixel[4] (out)
+          16.35   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (propagated)
+   0.00   10.00   clock reconvergence pessimism
+  -2.00    8.00   output external delay
+           8.00   data required time
+---------------------------------------------------------
+           8.00   data required time
+         -16.35   data arrival time
+---------------------------------------------------------
+          -8.35   slack (VIOLATED)
+
+
+Startpoint: _1667_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: edge_pixel[1] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81 ^ _1667_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   1.59    3.39 ^ _1667_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.23    3.62 v _1439_/Y (sky130_fd_sc_hd__nor2_1)
+   1.43    5.05 ^ _1441_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.77    5.83 ^ _1493_/X (sky130_fd_sc_hd__xor2_1)
+   0.74    6.57 v _1517_/X (sky130_fd_sc_hd__xnor3_1)
+   0.73    7.29 v _1523_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.04 v _1524_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.79 v _1526_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    9.54 v _1527_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.25 v _1528_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.96 v _1529_/X (sky130_fd_sc_hd__maj3_1)
+   0.70   11.66 v _1545_/X (sky130_fd_sc_hd__maj3_1)
+   0.88   12.54 v _1547_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   12.93 ^ _1567_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.25   13.18 v _1574_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.19   13.37 ^ _1576_/Y (sky130_fd_sc_hd__nand2_1)
+   0.14   13.52 v _1579_/Y (sky130_fd_sc_hd__nand3_1)
+   0.53   14.05 ^ _1580_/Y (sky130_fd_sc_hd__nor3_1)
+   0.23   14.28 v _1610_/Y (sky130_fd_sc_hd__nand2_1)
+   1.09   15.37 ^ _1611_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.72   16.09 v _1614_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.05   16.14 v edge_pixel[1] (out)
+          16.14   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (propagated)
+   0.00   10.00   clock reconvergence pessimism
+  -2.00    8.00   output external delay
+           8.00   data required time
+---------------------------------------------------------
+           8.00   data required time
+         -16.14   data arrival time
+---------------------------------------------------------
+          -8.14   slack (VIOLATED)
+
+
+Startpoint: _1667_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: edge_pixel[7] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81 ^ _1667_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   1.59    3.39 ^ _1667_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.23    3.62 v _1439_/Y (sky130_fd_sc_hd__nor2_1)
+   1.43    5.05 ^ _1441_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.77    5.83 ^ _1493_/X (sky130_fd_sc_hd__xor2_1)
+   0.74    6.57 v _1517_/X (sky130_fd_sc_hd__xnor3_1)
+   0.73    7.29 v _1523_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.04 v _1524_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.79 v _1526_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    9.54 v _1527_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.25 v _1528_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.96 v _1529_/X (sky130_fd_sc_hd__maj3_1)
+   0.70   11.66 v _1545_/X (sky130_fd_sc_hd__maj3_1)
+   0.88   12.54 v _1547_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   12.93 ^ _1567_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.25   13.18 v _1574_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.19   13.37 ^ _1576_/Y (sky130_fd_sc_hd__nand2_1)
+   0.14   13.52 v _1579_/Y (sky130_fd_sc_hd__nand3_1)
+   0.53   14.05 ^ _1580_/Y (sky130_fd_sc_hd__nor3_1)
+   0.23   14.28 v _1610_/Y (sky130_fd_sc_hd__nand2_1)
+   1.09   15.37 ^ _1611_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.75   16.11 v _1625_/Y (sky130_fd_sc_hd__nand2_1)
+   0.00   16.12 v edge_pixel[7] (out)
+          16.12   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (propagated)
+   0.00   10.00   clock reconvergence pessimism
+  -2.00    8.00   output external delay
+           8.00   data required time
+---------------------------------------------------------
+           8.00   data required time
+         -16.12   data arrival time
+---------------------------------------------------------
+          -8.12   slack (VIOLATED)
+
+
+Startpoint: _1667_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: edge_pixel[6] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81 ^ _1667_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   1.59    3.39 ^ _1667_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.23    3.62 v _1439_/Y (sky130_fd_sc_hd__nor2_1)
+   1.43    5.05 ^ _1441_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.77    5.83 ^ _1493_/X (sky130_fd_sc_hd__xor2_1)
+   0.74    6.57 v _1517_/X (sky130_fd_sc_hd__xnor3_1)
+   0.73    7.29 v _1523_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.04 v _1524_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.79 v _1526_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    9.54 v _1527_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.25 v _1528_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.96 v _1529_/X (sky130_fd_sc_hd__maj3_1)
+   0.70   11.66 v _1545_/X (sky130_fd_sc_hd__maj3_1)
+   0.88   12.54 v _1547_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   12.93 ^ _1567_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.25   13.18 v _1574_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.19   13.37 ^ _1576_/Y (sky130_fd_sc_hd__nand2_1)
+   0.14   13.52 v _1579_/Y (sky130_fd_sc_hd__nand3_1)
+   0.53   14.05 ^ _1580_/Y (sky130_fd_sc_hd__nor3_1)
+   0.23   14.28 v _1610_/Y (sky130_fd_sc_hd__nand2_1)
+   1.09   15.37 ^ _1611_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.66   16.03 v _1624_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.00   16.03 v edge_pixel[6] (out)
+          16.03   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (propagated)
+   0.00   10.00   clock reconvergence pessimism
+  -2.00    8.00   output external delay
+           8.00   data required time
+---------------------------------------------------------
+           8.00   data required time
+         -16.03   data arrival time
+---------------------------------------------------------
+          -8.03   slack (VIOLATED)
+
+
+Startpoint: _1667_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: edge_pixel[2] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81 ^ _1667_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   1.59    3.39 ^ _1667_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.23    3.62 v _1439_/Y (sky130_fd_sc_hd__nor2_1)
+   1.43    5.05 ^ _1441_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.77    5.83 ^ _1493_/X (sky130_fd_sc_hd__xor2_1)
+   0.74    6.57 v _1517_/X (sky130_fd_sc_hd__xnor3_1)
+   0.73    7.29 v _1523_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.04 v _1524_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.79 v _1526_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    9.54 v _1527_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.25 v _1528_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.96 v _1529_/X (sky130_fd_sc_hd__maj3_1)
+   0.70   11.66 v _1545_/X (sky130_fd_sc_hd__maj3_1)
+   0.88   12.54 v _1547_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   12.93 ^ _1567_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.25   13.18 v _1574_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.19   13.37 ^ _1576_/Y (sky130_fd_sc_hd__nand2_1)
+   0.14   13.52 v _1579_/Y (sky130_fd_sc_hd__nand3_1)
+   0.53   14.05 ^ _1580_/Y (sky130_fd_sc_hd__nor3_1)
+   0.23   14.28 v _1610_/Y (sky130_fd_sc_hd__nand2_1)
+   1.09   15.37 ^ _1611_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.54   15.91 v _1616_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.00   15.91 v edge_pixel[2] (out)
+          15.91   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (propagated)
+   0.00   10.00   clock reconvergence pessimism
+  -2.00    8.00   output external delay
+           8.00   data required time
+---------------------------------------------------------
+           8.00   data required time
+         -15.91   data arrival time
+---------------------------------------------------------
+          -7.91   slack (VIOLATED)
+
+
+Startpoint: _1667_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: edge_pixel[3] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81 ^ _1667_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   1.59    3.39 ^ _1667_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.23    3.62 v _1439_/Y (sky130_fd_sc_hd__nor2_1)
+   1.43    5.05 ^ _1441_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.77    5.83 ^ _1493_/X (sky130_fd_sc_hd__xor2_1)
+   0.74    6.57 v _1517_/X (sky130_fd_sc_hd__xnor3_1)
+   0.73    7.29 v _1523_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.04 v _1524_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.79 v _1526_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    9.54 v _1527_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.25 v _1528_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.96 v _1529_/X (sky130_fd_sc_hd__maj3_1)
+   0.70   11.66 v _1545_/X (sky130_fd_sc_hd__maj3_1)
+   0.88   12.54 v _1547_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   12.93 ^ _1567_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.25   13.18 v _1574_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.19   13.37 ^ _1576_/Y (sky130_fd_sc_hd__nand2_1)
+   0.14   13.52 v _1579_/Y (sky130_fd_sc_hd__nand3_1)
+   0.53   14.05 ^ _1580_/Y (sky130_fd_sc_hd__nor3_1)
+   0.23   14.28 v _1610_/Y (sky130_fd_sc_hd__nand2_1)
+   1.09   15.37 ^ _1611_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.50   15.87 v _1618_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.01   15.88 v edge_pixel[3] (out)
+          15.88   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (propagated)
+   0.00   10.00   clock reconvergence pessimism
+  -2.00    8.00   output external delay
+           8.00   data required time
+---------------------------------------------------------
+           8.00   data required time
+         -15.88   data arrival time
+---------------------------------------------------------
+          -7.88   slack (VIOLATED)
+
+
+Startpoint: _1667_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: edge_pixel[0] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81 ^ _1667_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   1.59    3.39 ^ _1667_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.23    3.62 v _1439_/Y (sky130_fd_sc_hd__nor2_1)
+   1.43    5.05 ^ _1441_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.77    5.83 ^ _1493_/X (sky130_fd_sc_hd__xor2_1)
+   0.74    6.57 v _1517_/X (sky130_fd_sc_hd__xnor3_1)
+   0.73    7.29 v _1523_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.04 v _1524_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    8.79 v _1526_/X (sky130_fd_sc_hd__maj3_1)
+   0.75    9.54 v _1527_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.25 v _1528_/X (sky130_fd_sc_hd__maj3_1)
+   0.71   10.96 v _1529_/X (sky130_fd_sc_hd__maj3_1)
+   0.70   11.66 v _1545_/X (sky130_fd_sc_hd__maj3_1)
+   0.88   12.54 v _1547_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   12.93 ^ _1567_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.25   13.18 v _1574_/Y (sky130_fd_sc_hd__xnor2_1)
+   0.19   13.37 ^ _1576_/Y (sky130_fd_sc_hd__nand2_1)
+   0.14   13.52 v _1579_/Y (sky130_fd_sc_hd__nand3_1)
+   0.53   14.05 ^ _1580_/Y (sky130_fd_sc_hd__nor3_1)
+   0.23   14.28 v _1610_/Y (sky130_fd_sc_hd__nand2_1)
+   1.09   15.37 ^ _1611_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.50   15.87 v _1612_/Y (sky130_fd_sc_hd__nor2_1)
+   0.01   15.88 v edge_pixel[0] (out)
+          15.88   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   0.00   10.00   clock network delay (propagated)
+   0.00   10.00   clock reconvergence pessimism
+  -2.00    8.00   output external delay
+           8.00   data required time
+---------------------------------------------------------
+           8.00   data required time
+         -15.88   data arrival time
+---------------------------------------------------------
+          -7.88   slack (VIOLATED)
+
+
+Startpoint: _1679_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _1657_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.61    1.61   clock network delay (propagated)
+   0.00    1.61 ^ _1679_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   1.14    2.76 ^ _1679_/Q (sky130_fd_sc_hd__dfxtp_1)
+   5.94    8.69 ^ _0891_/Y (sky130_fd_sc_hd__nor3b_1)
+   3.59   12.28 ^ _0903_/X (sky130_fd_sc_hd__and2_0)
+   1.00   13.28 v _0941_/Y (sky130_fd_sc_hd__nand2_1)
+   0.61   13.89 ^ _0942_/Y (sky130_fd_sc_hd__a41oi_1)
+   0.00   13.89 ^ _1657_/D (sky130_fd_sc_hd__dfxtp_1)
+          13.89   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   1.42   11.42   clock network delay (propagated)
+   0.00   11.42   clock reconvergence pessimism
+          11.42 ^ _1657_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.01   11.43   library setup time
+          11.43   data required time
+---------------------------------------------------------
+          11.43   data required time
+         -13.89   data arrival time
+---------------------------------------------------------
+          -2.46   slack (VIOLATED)
+
+
+Startpoint: _1678_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _1738_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.61    1.61   clock network delay (propagated)
+   0.00    1.61 ^ _1678_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   1.18    2.79 ^ _1678_/Q (sky130_fd_sc_hd__dfxtp_1)
+   5.66    8.45 ^ _0890_/Y (sky130_fd_sc_hd__nor3b_1)
+   3.72   12.18 ^ _0897_/X (sky130_fd_sc_hd__and2_0)
+   0.75   12.92 v _1141_/Y (sky130_fd_sc_hd__nor2_1)
+   0.61   13.53 ^ _1142_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.00   13.53 ^ _1738_/D (sky130_fd_sc_hd__dfxtp_1)
+          13.53   data arrival time
+
+  10.00   10.00   clock clk (rise edge)
+   1.14   11.14   clock network delay (propagated)
+   0.00   11.14   clock reconvergence pessimism
+          11.14 ^ _1738_/CLK (sky130_fd_sc_hd__dfxtp_1)
+  -0.07   11.07   library setup time
+          11.07   data required time
+---------------------------------------------------------
+          11.07   data required time
+         -13.53   data arrival time
+---------------------------------------------------------
+          -2.46   slack (VIOLATED)
+
+
+wns max -8.85
+tns max -166.08
+===== HOLD =====
+Startpoint: _1738_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _1698_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   1.14    1.14   clock network delay (propagated)
+   0.00    1.14 ^ _1738_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.72    1.85 v _1738_/Q (sky130_fd_sc_hd__dfxtp_1)
+   0.14    1.99 ^ _0908_/Y (sky130_fd_sc_hd__nand2_1)
+   0.10    2.09 v _1057_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.00    2.09 v _1698_/D (sky130_fd_sc_hd__dfxtp_1)
+           2.09   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81   clock reconvergence pessimism
+           1.81 ^ _1698_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    2.10   library hold time
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+          -2.09   data arrival time
+---------------------------------------------------------
+          -0.01   slack (VIOLATED)
+
+
+Startpoint: rst (input port clocked by clk)
+Endpoint: _1681_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst (in)
+   0.13    2.13 v _1012_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.00    2.13 v _1681_/D (sky130_fd_sc_hd__dfxtp_1)
+           2.13   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81   clock reconvergence pessimism
+           1.81 ^ _1681_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    2.10   library hold time
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+          -2.13   data arrival time
+---------------------------------------------------------
+           0.03   slack (MET)
+
+
+Startpoint: rst (input port clocked by clk)
+Endpoint: _1690_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst (in)
+   0.13    2.13 v _1036_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.00    2.13 v _1690_/D (sky130_fd_sc_hd__dfxtp_1)
+           2.13   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81   clock reconvergence pessimism
+           1.81 ^ _1690_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    2.10   library hold time
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+          -2.13   data arrival time
+---------------------------------------------------------
+           0.03   slack (MET)
+
+
+Startpoint: rst (input port clocked by clk)
+Endpoint: _1745_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst (in)
+   0.14    2.14 v _1156_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.00    2.14 v _1745_/D (sky130_fd_sc_hd__dfxtp_1)
+           2.14   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81   clock reconvergence pessimism
+           1.81 ^ _1745_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    2.10   library hold time
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+          -2.14   data arrival time
+---------------------------------------------------------
+           0.04   slack (MET)
+
+
+Startpoint: rst (input port clocked by clk)
+Endpoint: _1668_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst (in)
+   0.14    2.14 v _0970_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.00    2.14 v _1668_/D (sky130_fd_sc_hd__dfxtp_1)
+           2.14   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81   clock reconvergence pessimism
+           1.81 ^ _1668_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    2.10   library hold time
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+          -2.14   data arrival time
+---------------------------------------------------------
+           0.04   slack (MET)
+
+
+Startpoint: rst (input port clocked by clk)
+Endpoint: _1697_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst (in)
+   0.14    2.14 v _1055_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.00    2.14 v _1697_/D (sky130_fd_sc_hd__dfxtp_1)
+           2.14   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81   clock reconvergence pessimism
+           1.81 ^ _1697_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    2.10   library hold time
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+          -2.14   data arrival time
+---------------------------------------------------------
+           0.04   slack (MET)
+
+
+Startpoint: rst (input port clocked by clk)
+Endpoint: _1720_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst (in)
+   0.14    2.14 v _1106_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.00    2.14 v _1720_/D (sky130_fd_sc_hd__dfxtp_1)
+           2.14   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81   clock reconvergence pessimism
+           1.81 ^ _1720_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    2.10   library hold time
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+          -2.14   data arrival time
+---------------------------------------------------------
+           0.04   slack (MET)
+
+
+Startpoint: rst (input port clocked by clk)
+Endpoint: _1721_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst (in)
+   0.14    2.14 v _1108_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.00    2.14 v _1721_/D (sky130_fd_sc_hd__dfxtp_1)
+           2.14   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81   clock reconvergence pessimism
+           1.81 ^ _1721_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    2.10   library hold time
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+          -2.14   data arrival time
+---------------------------------------------------------
+           0.04   slack (MET)
+
+
+Startpoint: rst (input port clocked by clk)
+Endpoint: _1689_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst (in)
+   0.14    2.14 v _1033_/Y (sky130_fd_sc_hd__a21oi_1)
+   0.00    2.14 v _1689_/D (sky130_fd_sc_hd__dfxtp_1)
+           2.14   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81   clock reconvergence pessimism
+           1.81 ^ _1689_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    2.10   library hold time
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+          -2.14   data arrival time
+---------------------------------------------------------
+           0.04   slack (MET)
+
+
+Startpoint: rst (input port clocked by clk)
+Endpoint: _1753_ (rising edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (propagated)
+   2.00    2.00 ^ input external delay
+   0.00    2.00 ^ rst (in)
+   0.14    2.14 v _1172_/Y (sky130_fd_sc_hd__a211oi_1)
+   0.00    2.14 v _1753_/D (sky130_fd_sc_hd__dfxtp_1)
+           2.14   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   1.81    1.81   clock network delay (propagated)
+   0.00    1.81   clock reconvergence pessimism
+           1.81 ^ _1753_/CLK (sky130_fd_sc_hd__dfxtp_1)
+   0.29    2.10   library hold time
+           2.10   data required time
+---------------------------------------------------------
+           2.10   data required time
+          -2.14   data arrival time
+---------------------------------------------------------
+           0.05   slack (MET)
+
+
+wns min -0.01
+tns min -0.01
+===== STA COMPLETE =====

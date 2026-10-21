@@ -135,6 +135,13 @@ The complete summary is available at:
 
 `results/sta/extracted_rc_all_corners/summary.csv`
 
+
+### Detailed STA Reports and Graphs
+
+I organized the setup, hold, and gate-by-gate timing results separately for all 16 corners.
+
+**[View complete 16-corner STA evidence](STA_ALL_CORNERS.md)**
+
 ### 9. Design Rule Checking
 
 I ran KLayout DRC using the available SKY130 rule deck.
