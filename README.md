@@ -228,21 +228,53 @@ This resolved the device-count mismatch, but the LVS connectivity mismatch is st
 
 ### 12. Final Results
 
-| Parameter | Result |
-|---|---|
-| RTL simulation | PASS |
-| Gate-level simulation | PASS |
-| Logic synthesis | Completed |
-| Floorplanning and placement | Completed |
-| Clock Tree Synthesis | Completed |
-| Detailed routing | Completed |
-| Final standard-cell instances | 984 |
-| CTS clock buffers | 17 |
-| Full-cell GDSII | Generated |
-| KLayout DRC | 0 reported violations |
-| Post-route STA | 16 corners analyzed |
-| Timing closure | Not achieved |
-| Netgen LVS | Connectivity mismatch remains |
+The following table summarizes the implementation and
+verification results obtained during this project.
+
+| Design Stage / Parameter | Result | Status |
+|---|---|---|
+| RTL design | Sobel Edge Detection Accelerator in Verilog | Completed |
+| RTL functional simulation | Testbench verification passed | PASS |
+| Gate-level simulation | Synthesized design verified | PASS |
+| Logic synthesis | SKY130 mapped gate-level netlist | Completed |
+| Floorplanning | Core and die floorplan generated | Completed |
+| Standard-cell placement | Placement and legalization performed | Completed |
+| Power Distribution Network | PDN implemented | Completed |
+| Clock Tree Synthesis | 17 clock buffers inserted | Completed |
+| Global routing | Routing performed | Completed |
+| Detailed routing | Final routed DEF and ODB generated | Completed |
+| Standard-cell instances | 984 in final routed design | Verified |
+| Full-cell GDSII | Complete standard-cell GDS generated | Completed |
+| KLayout DRC | 0 violations reported under tested deck | PASS under tested deck |
+| Parasitic extraction | OpenRCX extracted-RC data generated | Completed |
+| Multi-corner STA | 16 SKY130 timing corners analyzed | Completed |
+| Setup timing reports | 16 individual reports | Uploaded |
+| Hold timing reports | 16 individual reports | Uploaded |
+| Setup and hold graphs | 32 graphs | Uploaded |
+| Gate-by-gate timing graphs | 32 graphs | Uploaded |
+| Timing closure | Setup/hold violations remain | Not achieved |
+| Power analysis | Preliminary SKY130 typical-corner estimate | Completed |
+| Internal power | 1.82 mW | Estimated |
+| Switching power | 1.14 mW | Estimated |
+| Leakage power | 2.97 nW | Estimated |
+| Total power | **2.96 mW** | Estimated |
+| Netgen LVS device count | 984 physical / 984 reference | Matched |
+| Netgen LVS connectivity | Connectivity mismatches remain | NOT PASSED |
+| Screenshots | 21 supporting images | Uploaded |
+| GitHub repository | Project documentation and results | Uploaded |
+
+**STA evidence:** [All 16-Corner Reports and Graphs](STA_ALL_CORNERS.md)
+
+**Power evidence:** [OpenROAD Power Report](results/power/power_tt_025C_1v80.rpt)
+
+**DRC evidence:** [KLayout DRC Results](results/drc/fullcells/sobel_fullcells.lyrdb)
+
+**LVS evidence:** [Netgen LVS Report](results/lvs/netgen/sobel_postroute_lvs_report.txt)
+
+**Verification notes:** Power was estimated without an
+explicit VCD/SAIF switching-activity file. DRC results
+apply only to the tested rule deck. LVS connectivity and
+timing closure remain unresolved.
 
 ### 13. What I Learned
 
