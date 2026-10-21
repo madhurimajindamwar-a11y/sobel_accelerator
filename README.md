@@ -150,6 +150,26 @@ The completed run reported zero DRC violations.
 
 This result applies to the tested rule deck and does not constitute foundry signoff.
 
+
+### Power Analysis
+
+I performed preliminary power estimation using OpenROAD
+with the SKY130 HD typical-corner library (25°C, 1.80 V).
+
+| Power component | Estimated power |
+|---|---:|
+| Internal power | 1.82 mW |
+| Switching power | 1.14 mW |
+| Leakage power | 2.97 nW |
+| Total power | **2.96 mW** |
+
+These results were produced without an explicit VCD/SAIF
+switching-activity input. Therefore, they represent a
+preliminary activity-assumption-based estimate, not
+measured application power.
+
+[View OpenROAD Power Report](results/power/power_tt_025C_1v80.rpt)
+
 ### 10. Layout Versus Schematic
 
 I used Magic for layout extraction and Netgen for LVS.
